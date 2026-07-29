@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Community</title>
+
+    <!-- ========================================== -->
+    <!-- 1. META PIXEL & TRACKING CODE (START) -->
+    <!-- ========================================== -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      
+      // ⚠️ Yahan YOUR_PIXEL_ID_HERE ki jagah apna Facebook Pixel ID daalein
+      fbq('init', 'YOUR_PIXEL_ID_HERE'); 
+      
+      // PageView Event
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- ========================================== -->
+    <!-- META PIXEL CODE (END) -->
+    <!-- ========================================== -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 10px;
+        }
+
+        /* Container Layout */
+        .card-container {
+            width: 100%;
+            max-width: 420px;
+            background-color: #2b82c9;
+            border-radius: 28px;
+            padding: 30px 20px 20px 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            color: #ffffff;
+        }
+
+        /* Profile Logo Box */
+        .logo-box {
+            width: 140px;
+            height: 140px;
+            background-color: #ffffff;
+            border-radius: 28px;
+            margin: 0 auto 20px auto;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Title Headers */
+        .heading {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .sub-heading {
+            font-size: 16px;
+            color: #e0e0e0;
+            margin-bottom: 22px;
+        }
+
+        /* Join Telegram Cyan Button */
+        .join-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            background-color: #1de9b6;
+            color: #ffffff;
+            font-size: 19px;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 14px 20px;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            margin-bottom: 22px;
+            transition: transform 0.2s;
+        }
+
+        .join-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Grid Cards (4 Features) */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .grid-card {
+            background-color: rgba(255, 255, 255, 0.18);
+            border-radius: 14px;
+            padding: 12px 8px;
+            font-size: 15px;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            line-height: 1.2;
+        }
+
+        /* "What's Inside" Box */
+        .inside-box {
+            background-color: rgba(255, 255, 255, 0.18);
+            border-radius: 20px;
+            padding: 20px 15px;
+            margin-bottom: 22px;
+        }
+
+        .inside-box h3 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 14px;
+        }
+
+        .inside-list {
+            list-style: none;
+            font-size: 15px;
+            line-height: 1.8;
+            font-weight: 500;
+        }
+
+        /* Timer Section */
+        .timer-title {
+            font-size: 16px;
+            color: #e0e0e0;
+            margin-bottom: 4px;
+        }
+
+        .timer-display {
+            font-size: 32px;
+            font-weight: 800;
+            color: #ffeb3b;
+            margin-bottom: 12px;
+        }
+
+        .disclaimer {
+            font-size: 15px;
+            color: #e0e0e0;
+            margin-bottom: 18px;
+        }
+
+        /* Bottom Yellow Tag */
+        .agency-tag {
+            display: inline-block;
+            background-color: #ffeb3b;
+            color: #000000;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 10px 20px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        
+        <!-- Profile Logo -->
+        <div class="logo-box">
+            <img src="profile.png" alt="Logo">
+        </div>
+
+        <!-- Main Title -->
+        <div class="heading">Join Our Community</div>
+        <div class="sub-heading">100k+ Active Members</div>
+
+        <!-- Telegram Button -->
+        <a id="telegramLink" href="https://t.me/your_telegram_channel" class="join-btn" onclick="trackButtonClick()">
+            📩 Join Telegram Channel
+        </a>
+
+        <!-- 4 Grid Features -->
+        <div class="grid-container">
+            <div class="grid-card">✅ Verified Source</div>
+            <div class="grid-card">🔒 Secure Platform</div>
+            <div class="grid-card">📘 Learning<br>Content</div>
+            <div class="grid-card">🎯 Quality<br>Education</div>
+        </div>
+
+        <!-- What's Inside Box -->
+        <div class="inside-box">
+            <h3>What's Inside</h3>
+            <ul class="inside-list">
+                <li>📊 Market Education & Insights</li>
+                <li>🎯 Active Learner Community</li>
+                <li>📚 Educational Resources</li>
+            </ul>
+        </div>
+
+        <!-- Timer Area -->
+        <div class="timer-title">Limited Free Access</div>
+        <div class="timer-display" id="timer">00:20</div>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer">Educational Purpose only</div>
+
+        <!-- Bottom Tag -->
+        <div class="agency-tag">
+            Ads Managed by FXADSS Agency
+        </div>
+
+    </div>
+
+    <!-- 20-Second Timer, Auto Redirect & Meta Event Tracking Script -->
+    <script>
+        // ⚠️ Yahan apna Telegram Channel Link replace karein
+        let telegramUrl = "https://t.me/your_telegram_channel"; 
+
+        // Link update
+        document.getElementById("telegramLink").href = telegramUrl;
+
+        // Button Click Event Track (Meta Pixel)
+        function trackButtonClick() {
+            if(typeof fbq !== 'undefined') {
+                fbq('trackCustom', 'TelegramBtnClick'); 
+                fbq('track', 'Lead'); 
+            }
+        }
+
+        // 20-Second Countdown Timer Logic
+        let timeLeft = 20;
+        let timerElement = document.getElementById("timer");
+
+        let countdown = setInterval(function() {
+            timeLeft--;
+            
+            // Format time as 00:XX
+            let seconds = timeLeft < 10 ? "0" + timeLeft : timeLeft;
+            timerElement.textContent = "00:" + seconds;
+
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                
+                // Track Redirect in Meta Pixel
+                if(typeof fbq !== 'undefined') {
+                    fbq('trackCustom', 'AutoRedirect');
+                }
+
+                // Auto Redirect to Telegram
+                window.location.href = telegramUrl;
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
